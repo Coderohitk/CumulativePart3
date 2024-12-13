@@ -1,0 +1,149 @@
+﻿@model Cumulative_1.Models.TeacherCoursesViewModel
+
+<style>
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #f0f2f5;
+        margin: 0;
+        padding: 20px;
+        line-height: 1.6;
+    }
+
+    .container {
+        max-width: 800px;
+        margin: 40px auto;
+        background-color: #fff;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
+
+    h1 {
+        color: #007bff;
+        font-size: 28px;
+        margin-bottom: 30px;
+        letter-spacing: 1px;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 20px 0;
+        overflow: hidden;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    th, td {
+        padding: 15px;
+        border: 1px solid #ddd;
+        text-align: center;
+        font-size: 16px;
+    }
+
+    th {
+        background-color: #007bff;
+        color: white;
+        text-transform: uppercase;
+        letter-spacing: 1.2px;
+    }
+
+    td {
+        color: #333;
+        background-color: #fdfdfd;
+    }
+
+    tr:nth-child(even) {
+        background-color: #f9f9f9;
+    }
+
+    tr:hover {
+        background-color: #f1f1f1;
+        cursor: pointer;
+    }
+
+    .button-container {
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    .btn {
+        padding: 12px 25px;
+        background-color: #dc3545;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        font-size: 18px;
+        font-weight: bold;
+        text-transform: uppercase;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+        .btn:hover {
+            background-color: #c82333;
+            box-shadow: 0 4px 8px rgba(220, 53, 69, 0.4);
+            transform: translateY(-2px);
+        }
+
+    .no-courses {
+        color: #888;
+        font-style: italic;
+    }
+</style>
+
+<div class="container">
+    <h1>Teacher Details</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Teacher Name</th>
+                <th>Hire Date</th>
+                <th>Employee Number</th>
+                <th>Salary</th>
+                <th>Courses Taught</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>@Model.Teacher.TeacherFName @Model.Teacher.TeacherLName</td>
+                <td>@Model.Teacher.TeacherHireDate.ToString("yyyy-MM-dd")</td>
+                <td>@Model.Teacher.TeacherEmpNu</td>
+                <td>$@Model.Teacher.TeacherSalary</td>
+                <td>
+                    @if (Model.Courses != null && Model.Courses.Any())
+                    {
+                        @foreach (var course in Model.Courses)
+                        {
+                            <span>@course</span>
+                            @if (course != Model.Courses.Last())
+                            {
+                                <span>, </span>
+                            }
+                        }
+                    }
+                    else
+                    {
+                        <span class="no-courses">No courses found</span>
+                        <br />
+                        <a href="/CoursePage/New" class="back-link">Add a course</a>
+                    }
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="button-container">
+        <form method="get" action="/TeacherPage/DeleteConfirm/@Model.Teacher.TeacherId">
+            <button type="submit" class="btn">Delete Teacher</button>
+        </form>
+    </div>
+    <div class="button-container">
+        <form method="get" action="/TeacherPage/Edit/@Model.Teacher.TeacherId">
+            <button type="submit" class="btn">Update teacher</button>
+        </form>
+    </div>
+
+</div>

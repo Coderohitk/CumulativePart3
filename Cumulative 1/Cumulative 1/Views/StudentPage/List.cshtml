@@ -1,0 +1,65 @@
+﻿@model IEnumerable<Cumulative_1.Models.Student>
+
+<div class="student-list">
+    <h2>Student List</h2>
+
+    @foreach (var student in Model)
+    {
+        <div class="student-item">
+            <a href="/StudentPage/Show/@student.StudentId" class="student-link">
+                @student.StudentFName @student.StudentLName
+            </a>
+        </div>
+    }
+
+    <div class="add-student-button">
+        <a href="/StudentPage/New" class="btn btn-primary">Add New Student</a>
+    </div>
+</div>
+
+<!-- Optional: Inline CSS for basic styling -->
+<style>
+    .student-list {
+        width: 80%;
+        margin: 20px auto;
+        font-family: Arial, sans-serif;
+    }
+
+    .student-item {
+        margin: 10px 0;
+        padding: 10px;
+        border-bottom: 1px solid #ccc;
+    }
+
+    .student-link {
+        text-decoration: none;
+        color: #007BFF;
+        font-size: 18px;
+    }
+
+    .student-link:hover {
+        text-decoration: underline;
+    }
+
+    .add-student-button {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .btn {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #28a745;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        text-decoration: none;
+        font-size: 16px;
+    }
+
+    .btn:hover {
+        background-color: #218838;
+    }
+</style>
+
+

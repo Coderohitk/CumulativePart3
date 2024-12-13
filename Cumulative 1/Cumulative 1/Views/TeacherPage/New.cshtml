@@ -1,0 +1,121 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create New Teacher</title>
+    <style>
+        /* General layout for containershow */
+        #containershow {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+        }
+
+        /* Header styling */
+        h2 {
+            text-align: center;
+            font-family: 'Arial', sans-serif;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        /* Navigation link styling */
+        nav {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .navlink {
+            text-decoration: none;
+            color: #007BFF;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        .navlink:hover {
+            text-decoration: underline;
+        }
+
+        /* Input form styling */
+        .inputrow {
+            margin-bottom: 15px;
+        }
+
+        .inputrow label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+            font-size: 14px;
+        }
+
+        .inputrow input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .inputrow input:focus {
+            border-color: #007BFF;
+            outline: none;
+        }
+
+        /* Submit button styling */
+        .inputrow input[type="submit"] {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        .inputrow input[type="submit"]:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <div id="containershow">
+        <nav>
+            <a class="navlink" href="/TeacherPage/List">Back to Teachers</a>
+        </nav>
+        <h2>Create New Teacher</h2>
+        <form method="POST" action="/TeacherPage/Create">
+            <div class="inputrow">
+                <label for="TeacherFname">First Name:</label>
+                <input type="text" id="TeacherFname" name="TeacherFname" required />
+            </div>
+
+            <div class="inputrow">
+                <label for="TeacherLname">Last Name:</label>
+                <input type="text" id="TeacherLname" name="TeacherLname" required />
+            </div>
+
+            <div class="inputrow">
+                <label for="TeacherEmpNu">Employee Number:</label>
+                <input type="text" id="TeacherEmpNu" name="TeacherEmpNu" required />
+            </div>
+
+            <div class="inputrow">
+                <label for="TeacherHireDate">Hire Date:</label>
+                <input type="date" id="TeacherHireDate" name="TeacherHireDate" required />
+            </div>
+
+            <div class="inputrow">
+                <label for="TeacherSalary">Salary:</label>
+                <input type="text" id="TeacherSalary" name="TeacherSalary" required />
+            </div>
+
+            <div class="inputrow">
+                <input type="submit" value="Create Teacher" />
+            </div>
+        </form>
+    </div>
+</body>
+</html>

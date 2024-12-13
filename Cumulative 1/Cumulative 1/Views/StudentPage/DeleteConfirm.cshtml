@@ -1,0 +1,79 @@
+﻿@model Cumulative_1.Models.Student
+
+<style>
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #f0f2f5;
+        margin: 0;
+        padding: 20px;
+        line-height: 1.6;
+    }
+
+    #containershow {
+        max-width: 600px;
+        margin: 40px auto;
+        background-color: #fff;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
+
+    nav {
+        margin-bottom: 20px;
+    }
+
+    .navlink {
+        color: #007bff;
+        text-decoration: none;
+        font-size: 18px;
+    }
+
+    .navlink:hover {
+        text-decoration: underline;
+    }
+
+    h2 {
+        color: #dc3545;
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    p {
+        font-size: 16px;
+        color: #333;
+        margin-bottom: 20px;
+    }
+
+    .btn-warning {
+        padding: 12px 25px;
+        background-color: #dc3545;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        font-size: 18px;
+        font-weight: bold;
+        text-transform: uppercase;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .btn-warning:hover {
+        background-color: #c82333;
+        box-shadow: 0 4px 8px rgba(220, 53, 69, 0.4);
+        transform: translateY(-2px);
+    }
+</style>
+
+<div id="containershow">
+    <nav>
+        <a class="navlink" href="/StudentPage/Show/@Model.StudentId">Cancel</a>
+    </nav>
+    <h2>Are you sure you want to delete @Model.StudentFName @Model.StudentLName?</h2>
+    <p>This action cannot be undone.</p>
+    <form method="POST" action="/StudentPage/Delete/@Model.StudentId">
+        <button class="btn-warning">
+            Confirm Delete
+        </button>
+    </form>
+</div>

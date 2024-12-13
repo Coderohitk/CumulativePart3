@@ -1,0 +1,174 @@
+﻿@model IEnumerable<Cumulative_1.Models.Teacher>
+
+<style>
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #f4f7fc;
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        max-width: 1100px;
+        margin: 40px auto;
+        background-color: #ffffff;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+        text-align: center;
+        color: #3c7e9b;
+        font-size: 32px;
+        margin-bottom: 20px;
+        font-weight: 600;
+    }
+
+    h3 {
+        text-align: left;
+        font-size: 24px;
+        color: #333;
+        margin-bottom: 15px;
+    }
+
+    .filter-form {
+        background-color: #e9f1f7;
+        padding: 25px;
+        border-radius: 8px;
+        margin-bottom: 30px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        display: flex;
+        gap: 15px;
+        justify-content: space-between;
+    }
+
+        .filter-form label {
+            font-size: 18px;
+            color: #333;
+        }
+
+        .filter-form input[type="date"] {
+            padding: 10px;
+            margin: 5px 0;
+            width: 250px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+            background-color: #f9f9f9;
+        }
+
+        .filter-form input[type="submit"] {
+            padding: 12px 20px;
+            background-color: #3c7e9b;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+            transition: background-color 0.3s ease;
+        }
+
+            .filter-form input[type="submit"]:hover {
+                background-color: #285a6b;
+            }
+
+    .teacher-list {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 25px;
+    }
+
+        .teacher-list th, .teacher-list td {
+            padding: 15px;
+            border: 1px solid #ddd;
+            text-align: left;
+            font-size: 16px;
+        }
+
+        .teacher-list th {
+            background-color: #3c7e9b;
+            color: white;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: bold;
+        }
+
+        .teacher-list tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        .teacher-list tr:hover {
+            background-color: #f1f9fc;
+            transition: background-color 0.3s ease;
+        }
+
+    .teacher-name {
+        color: #007bff;
+        text-decoration: none;
+        font-weight: bold;
+        transition: color 0.3s ease;
+    }
+
+        .teacher-name:hover {
+            color: #0056b3;
+            text-decoration: underline;
+        }
+
+    .add-teacher-link {
+        display: inline-block;
+        margin-top: 20px;
+        font-size: 18px;
+        color: #3c7e9b;
+        font-weight: 500;
+        text-decoration: none;
+        padding: 10px 15px;
+        border: 1px solid #3c7e9b;
+        border-radius: 5px;
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+        .add-teacher-link:hover {
+            background-color: #3c7e9b;
+            color: white;
+        }
+</style>
+
+<div class="container">
+    <h1>Search Teachers by Hire Date</h1>
+
+    <form method="GET" action="/TeacherPage/List" class="filter-form">
+        <div>
+            <label for="StartDate">Start Date:</label>
+            <input type="date" name="StartDate" />
+        </div>
+        <div>
+            <label for="EndDate">End Date:</label>
+            <input type="date" name="EndDate" />
+        </div>
+        <div>
+            <input type="submit" value="Search" />
+        </div>
+    </form>
+
+    <a href="/TeacherPage/New" class="add-teacher-link">Add New Teacher</a><br />
+
+    <h3 style="margin-top:20px;">Teacher List</h3>
+    <table class="teacher-list">
+        <thead>
+            <tr>
+                <th>Teacher Name</th>
+                <th>View Details</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (Cumulative_1.Models.Teacher teacher in Model)
+            {
+                <tr>
+                    <td>@teacher.TeacherFName @teacher.TeacherLName</td>
+                    <td><a href="/TeacherPage/Show/@teacher.TeacherId" class="teacher-name">View Profile</a></td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

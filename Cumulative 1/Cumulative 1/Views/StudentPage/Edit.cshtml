@@ -1,0 +1,144 @@
+﻿@model Cumulative_1.Models.Student
+
+<div id="containershow">
+    <nav>
+        <a class="navlink" href="/StudentPage/Show/@Model.StudentId">Back</a>
+    </nav>
+    <h2>Update Student</h2>
+    <form method="POST" action="/StudentPage/Update/@Model.StudentId" id="studentForm">
+        <div class="inputrow">
+            <label for="StudentFname">First Name:</label>
+            <input type="text" id="StudentFname" name="StudentFname" value="@Model.StudentFName" />
+            <span id="fnameError" class="error-message">First Name cannot be empty.</span>
+        </div>
+        <div class="inputrow">
+            <label for="StudentLname">Last Name:</label>
+            <input type="text" id="StudentLname" name="StudentLname" value="@Model.StudentLName" />
+            <span id="lnameError" class="error-message">Last Name cannot be empty.</span>
+        </div>
+        <div class="inputrow">
+            <label for="EnrollDate">Enrollment Date:</label>
+            <input type="date" id="EnrollDate" name="EnrollDate" value="@Model.EnrollDate.ToString("yyyy-MM-dd")" />
+            <span id="enrollDateError" class="error-message">Enrollment Date cannot be in the future.</span>
+        </div>
+        <div class="inputrow">
+            <label for="StudentNumber">Student Number:</label>
+            <input type="text" id="StudentNumber" name="StudentNumber" value="@Model.StudentNumber" />
+        </div>
+        <div class="inputrow">
+            <input type="submit" value="Update Student" class="submit-btn" />
+        </div>
+    </form>
+</div>
+
+<script>
+    document.getElementById('studentForm').addEventListener('submit', function (event) {
+        const studentFname = document.getElementById('StudentFname').value.trim();
+        const studentLname = document.getElementById('StudentLname').value.trim();
+        const enrollDate = document.getElementById('EnrollDate').value;
+        const today = new Date().toISOString().split('T')[0];
+
+        let valid = true;
+
+        document.getElementById('fnameError').style.display = 'none';
+        document.getElementById('lnameError').style.display = 'none';
+        document.getElementById('enrollDateError').style.display = 'none';
+
+        if (!studentFname) {
+            document.getElementById('fnameError').style.display = 'inline';
+            valid = false;
+        }
+
+        if (!studentLname) {
+            document.getElementById('lnameError').style.display = 'inline';
+            valid = false;
+        }
+
+        if (enrollDate > today) {
+            document.getElementById('enrollDateError').style.display = 'inline';
+            valid = false;
+        }
+
+        if (!valid) {
+            event.preventDefault();
+        }
+    });
+</script>
+
+<style>
+    #containershow {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+        font-family: 'Arial', sans-serif;
+        background-color: #f9f9f9;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+        text-align: center;
+        color: #333;
+        margin-bottom: 20px;
+    }
+
+    .inputrow {
+        margin-bottom: 15px;
+    }
+
+    label {
+        display: block;
+        font-size: 14px;
+        font-weight: bold;
+        color: #333;
+        margin-bottom: 5px;
+    }
+
+    input[type="text"],
+    input[type="date"] {
+        width: 100%;
+        padding: 10px;
+        font-size: 14px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        transition: border 0.3s;
+    }
+
+        input[type="text"]:focus,
+        input[type="date"]:focus {
+            border-color: #4CAF50;
+            outline: none;
+        }
+
+    .submit-btn {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        width: 100%;
+        font-size: 16px;
+        transition: background-color 0.3s;
+    }
+
+        .submit-btn:hover {
+            background-color: #45a049;
+        }
+
+    .error-message {
+        color: red;
+        display: none;
+        font-size: 12px;
+    }
+
+    nav a {
+        color: #4CAF50;
+        text-decoration: none;
+        font-size: 16px;
+    }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+</style>

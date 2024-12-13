@@ -1,0 +1,81 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Rohit kumar\\Documents\\Programing class\\Back end\\http-5125\\Week 9\\Cumulative 1\\Cumulative 1\\Cumulative 1.fsproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Rohit kumar\\Documents\\Programing class\\Back end\\http-5125\\Week 9\\Cumulative 1\\Cumulative 1\\Cumulative 1.fsproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Rohit kumar\\Documents\\Programing class\\Back end\\http-5125\\Week 9\\Cumulative 1\\Cumulative 1\\Cumulative 1.fsproj",
+        "projectName": "Cumulative 1",
+        "projectPath": "C:\\Users\\Rohit kumar\\Documents\\Programing class\\Back end\\http-5125\\Week 9\\Cumulative 1\\Cumulative 1\\Cumulative 1.fsproj",
+        "packagesPath": "C:\\Users\\Rohit kumar\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Rohit kumar\\Documents\\Programing class\\Back end\\http-5125\\Week 9\\Cumulative 1\\Cumulative 1\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Rohit kumar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "C:\\Program Files\\dotnet\\sdk\\8.0.400\\FSharp\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "FSharp.Core": {
+              "include": "Runtime, Compile, Build, Native, Analyzers, BuildTransitive",
+              "target": "Package",
+              "version": "[8.0.400, )",
+              "generatePathProperty": true
+            },
+            "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": {
+              "target": "Package",
+              "version": "[8.0.8, )",
+              "generatePathProperty": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
