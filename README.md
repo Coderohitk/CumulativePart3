@@ -25,8 +25,7 @@ This project is the third part of the Cumulative Assessment for Back-End Web Dev
   - Teacher Name, Student Name, and Course Name cannot be empty.
 - **Invalid Dates**:
   - Start Date and Finish Date cannot be in the future.
-- **Negative Salary**:
-  - Teacher Salary must be greater than or equal to 0.
+
 
 ## Technologies Used
 
@@ -63,22 +62,7 @@ git clone https://github.com/Coderohitk/CumulativePart3.git
 2. Restore NuGet packages.
 3. Run the application using IIS Express or Kestrel.
 
-## Project Structure
 
-- `/Models`
-  - `SchoolDbContext.cs`: Database connection and context configuration.
-  - `Teacher.cs`: Model representing teacher data.
-  - `Student.cs`: Model representing student data.
-  - `Course.cs`: Model representing course data.
-- `/Controllers`
-  - `TeacherAPIController.cs`: API controller for managing teacher updates.
-  - `StudentAPIController.cs`: API controller for managing student updates.
-  - `CourseAPIController.cs`: API controller for managing course updates.
-  - `TeacherPageController.cs`: MVC controller for rendering teacher-related pages.
-- `/Views`
-  - `Teacher/Edit.cshtml`: View for updating teacher information.
-  - `Student/Edit.cshtml`: View for updating student information.
-  - `Course/Edit.cshtml`: View for updating course information.
 
 ## Testing
 
@@ -92,8 +76,8 @@ git clone https://github.com/Coderohitk/CumulativePart3.git
 
 ### UI Testing
 
-- Test the web pages for updating teachers, students, and courses by manually entering valid and invalid data.
-- Ensure appropriate error messages are displayed for invalid input.
+- Testing the web pages for updating teachers, students, and courses by manually entering valid and invalid data.
+- Ensuring appropriate error messages are displayed for invalid input.
 
 ## Error Handling Examples
 
@@ -107,10 +91,4 @@ git clone https://github.com/Coderohitk/CumulativePart3.git
 - Display error messages when:
   - Required fields are left empty.
   - Dates are in the future.
-  - Salary is less than 0.
 
-## Submission Details
-
-1. Push the project to a public GitHub repository.
-2. Include a PDF with evidence of your testing (screenshots of cURL commands and web pages).
-3. Submit the GitHub repository link and testing PDF as part of your assignment submission.
