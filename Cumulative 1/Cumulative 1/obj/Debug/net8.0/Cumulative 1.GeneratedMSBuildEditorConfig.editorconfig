@@ -9,103 +9,103 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Cumulative_1
 build_property.RootNamespace = Cumulative_1
-build_property.ProjectDir = C:\Users\Rohit kumar\Documents\Programing class\Back end\CumulativePart2\Cumulative 1\Cumulative 1\
+build_property.ProjectDir = C:\Users\Rohit kumar\Documents\Programing class\Back end\CumulativePart3\Cumulative 1\Cumulative 1\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Rohit kumar\Documents\Programing class\Back end\CumulativePart2\Cumulative 1\Cumulative 1
+build_property.MSBuildProjectDirectory = C:\Users\Rohit kumar\Documents\Programing class\Back end\CumulativePart3\Cumulative 1\Cumulative 1
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Rohit kumar/Documents/Programing class/Back end/CumulativePart2/Cumulative 1/Cumulative 1/Views/CoursePage/DeleteConfirm.cshtml]
+[C:/Users/Rohit kumar/Documents/Programing class/Back end/CumulativePart3/Cumulative 1/Cumulative 1/Views/CoursePage/DeleteConfirm.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlUGFnZVxEZWxldGVDb25maXJtLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Rohit kumar/Documents/Programing class/Back end/CumulativePart2/Cumulative 1/Cumulative 1/Views/CoursePage/Edit.cshtml]
+[C:/Users/Rohit kumar/Documents/Programing class/Back end/CumulativePart3/Cumulative 1/Cumulative 1/Views/CoursePage/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlUGFnZVxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Rohit kumar/Documents/Programing class/Back end/CumulativePart2/Cumulative 1/Cumulative 1/Views/CoursePage/List.cshtml]
+[C:/Users/Rohit kumar/Documents/Programing class/Back end/CumulativePart3/Cumulative 1/Cumulative 1/Views/CoursePage/List.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlUGFnZVxMaXN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Rohit kumar/Documents/Programing class/Back end/CumulativePart2/Cumulative 1/Cumulative 1/Views/CoursePage/New.cshtml]
+[C:/Users/Rohit kumar/Documents/Programing class/Back end/CumulativePart3/Cumulative 1/Cumulative 1/Views/CoursePage/New.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlUGFnZVxOZXcuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Rohit kumar/Documents/Programing class/Back end/CumulativePart2/Cumulative 1/Cumulative 1/Views/CoursePage/Show.cshtml]
+[C:/Users/Rohit kumar/Documents/Programing class/Back end/CumulativePart3/Cumulative 1/Cumulative 1/Views/CoursePage/Show.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlUGFnZVxTaG93LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Rohit kumar/Documents/Programing class/Back end/CumulativePart2/Cumulative 1/Cumulative 1/Views/Home/Index.cshtml]
+[C:/Users/Rohit kumar/Documents/Programing class/Back end/CumulativePart3/Cumulative 1/Cumulative 1/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Rohit kumar/Documents/Programing class/Back end/CumulativePart2/Cumulative 1/Cumulative 1/Views/Home/Privacy.cshtml]
+[C:/Users/Rohit kumar/Documents/Programing class/Back end/CumulativePart3/Cumulative 1/Cumulative 1/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Rohit kumar/Documents/Programing class/Back end/CumulativePart2/Cumulative 1/Cumulative 1/Views/Shared/Error.cshtml]
+[C:/Users/Rohit kumar/Documents/Programing class/Back end/CumulativePart3/Cumulative 1/Cumulative 1/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Rohit kumar/Documents/Programing class/Back end/CumulativePart2/Cumulative 1/Cumulative 1/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/Rohit kumar/Documents/Programing class/Back end/CumulativePart3/Cumulative 1/Cumulative 1/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Rohit kumar/Documents/Programing class/Back end/CumulativePart2/Cumulative 1/Cumulative 1/Views/StudentPage/DeleteConfirm.cshtml]
+[C:/Users/Rohit kumar/Documents/Programing class/Back end/CumulativePart3/Cumulative 1/Cumulative 1/Views/StudentPage/DeleteConfirm.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGVudFBhZ2VcRGVsZXRlQ29uZmlybS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Rohit kumar/Documents/Programing class/Back end/CumulativePart2/Cumulative 1/Cumulative 1/Views/StudentPage/Edit.cshtml]
+[C:/Users/Rohit kumar/Documents/Programing class/Back end/CumulativePart3/Cumulative 1/Cumulative 1/Views/StudentPage/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGVudFBhZ2VcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Rohit kumar/Documents/Programing class/Back end/CumulativePart2/Cumulative 1/Cumulative 1/Views/StudentPage/List.cshtml]
+[C:/Users/Rohit kumar/Documents/Programing class/Back end/CumulativePart3/Cumulative 1/Cumulative 1/Views/StudentPage/List.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGVudFBhZ2VcTGlzdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Rohit kumar/Documents/Programing class/Back end/CumulativePart2/Cumulative 1/Cumulative 1/Views/StudentPage/New.cshtml]
+[C:/Users/Rohit kumar/Documents/Programing class/Back end/CumulativePart3/Cumulative 1/Cumulative 1/Views/StudentPage/New.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGVudFBhZ2VcTmV3LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Rohit kumar/Documents/Programing class/Back end/CumulativePart2/Cumulative 1/Cumulative 1/Views/StudentPage/Show.cshtml]
+[C:/Users/Rohit kumar/Documents/Programing class/Back end/CumulativePart3/Cumulative 1/Cumulative 1/Views/StudentPage/Show.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGVudFBhZ2VcU2hvdy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Rohit kumar/Documents/Programing class/Back end/CumulativePart2/Cumulative 1/Cumulative 1/Views/TeacherPage/DeleteConfirm.cshtml]
+[C:/Users/Rohit kumar/Documents/Programing class/Back end/CumulativePart3/Cumulative 1/Cumulative 1/Views/TeacherPage/DeleteConfirm.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVhY2hlclBhZ2VcRGVsZXRlQ29uZmlybS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Rohit kumar/Documents/Programing class/Back end/CumulativePart2/Cumulative 1/Cumulative 1/Views/TeacherPage/Edit.cshtml]
+[C:/Users/Rohit kumar/Documents/Programing class/Back end/CumulativePart3/Cumulative 1/Cumulative 1/Views/TeacherPage/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVhY2hlclBhZ2VcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Rohit kumar/Documents/Programing class/Back end/CumulativePart2/Cumulative 1/Cumulative 1/Views/TeacherPage/Error.cshtml]
+[C:/Users/Rohit kumar/Documents/Programing class/Back end/CumulativePart3/Cumulative 1/Cumulative 1/Views/TeacherPage/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVhY2hlclBhZ2VcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Rohit kumar/Documents/Programing class/Back end/CumulativePart2/Cumulative 1/Cumulative 1/Views/TeacherPage/List.cshtml]
+[C:/Users/Rohit kumar/Documents/Programing class/Back end/CumulativePart3/Cumulative 1/Cumulative 1/Views/TeacherPage/List.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVhY2hlclBhZ2VcTGlzdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Rohit kumar/Documents/Programing class/Back end/CumulativePart2/Cumulative 1/Cumulative 1/Views/TeacherPage/New.cshtml]
+[C:/Users/Rohit kumar/Documents/Programing class/Back end/CumulativePart3/Cumulative 1/Cumulative 1/Views/TeacherPage/New.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVhY2hlclBhZ2VcTmV3LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Rohit kumar/Documents/Programing class/Back end/CumulativePart2/Cumulative 1/Cumulative 1/Views/TeacherPage/Show.cshtml]
+[C:/Users/Rohit kumar/Documents/Programing class/Back end/CumulativePart3/Cumulative 1/Cumulative 1/Views/TeacherPage/Show.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVhY2hlclBhZ2VcU2hvdy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Rohit kumar/Documents/Programing class/Back end/CumulativePart2/Cumulative 1/Cumulative 1/Views/_ViewImports.cshtml]
+[C:/Users/Rohit kumar/Documents/Programing class/Back end/CumulativePart3/Cumulative 1/Cumulative 1/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Rohit kumar/Documents/Programing class/Back end/CumulativePart2/Cumulative 1/Cumulative 1/Views/_ViewStart.cshtml]
+[C:/Users/Rohit kumar/Documents/Programing class/Back end/CumulativePart3/Cumulative 1/Cumulative 1/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Rohit kumar/Documents/Programing class/Back end/CumulativePart2/Cumulative 1/Cumulative 1/Views/Shared/_Layout.cshtml]
+[C:/Users/Rohit kumar/Documents/Programing class/Back end/CumulativePart3/Cumulative 1/Cumulative 1/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-r39svag063

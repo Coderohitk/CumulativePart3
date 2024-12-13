@@ -1785,11 +1785,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Rohit kumar\\Documents\\Programing class\\Back end\\CumulativePart2\\Cumulative 1\\Cumulative 1\\Cumulative 1.csproj",
+      "projectUniqueName": "C:\\Users\\Rohit kumar\\Documents\\Programing class\\Back end\\CumulativePart3\\Cumulative 1\\Cumulative 1\\Cumulative 1.csproj",
       "projectName": "Cumulative 1",
-      "projectPath": "C:\\Users\\Rohit kumar\\Documents\\Programing class\\Back end\\CumulativePart2\\Cumulative 1\\Cumulative 1\\Cumulative 1.csproj",
+      "projectPath": "C:\\Users\\Rohit kumar\\Documents\\Programing class\\Back end\\CumulativePart3\\Cumulative 1\\Cumulative 1\\Cumulative 1.csproj",
       "packagesPath": "C:\\Users\\Rohit kumar\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Rohit kumar\\Documents\\Programing class\\Back end\\CumulativePart2\\Cumulative 1\\Cumulative 1\\obj\\",
+      "outputPath": "C:\\Users\\Rohit kumar\\Documents\\Programing class\\Back end\\CumulativePart3\\Cumulative 1\\Cumulative 1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Rohit kumar\\AppData\\Roaming\\NuGet\\NuGet.Config",
