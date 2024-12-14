@@ -179,11 +179,32 @@ namespace Cumulative_1.Controllers
             return 0;
         }
         /// <summary>
-        /// 
+        /// Updates a Student in the database. Data is a Student object, request query contains Student ID.
         /// </summary>
-        /// <param name="StudentId"></param>
-        /// <param name="StudentData"></param>
-        /// <returns></returns>
+        /// <param name="StudentData">Student Object containing updated student details</param>
+        /// <param name="StudentId">The Student ID primary key</param>
+        /// <example>
+        /// PUT: api/Student/UpdateStudent/4
+        /// Headers: Content-Type: application/json
+        /// Request Body:
+        /// {
+        ///     "StudentFName": "Sumit",
+        ///     "StudentLName": "",
+        ///     "EnrollDate": "2024-01-01",
+        ///     "StudentNumber": "S12345"
+        /// } -> 
+        /// {
+        ///     "StudentId": 4,
+        ///     "StudentFName": "Sumit",
+        ///     "StudentLName": "Singh",
+        ///     "EnrollDate": "2024-01-01",
+        ///     "StudentNumber": "S12345"
+        /// }
+        /// </example>
+        /// <returns>
+        /// The updated Student object
+        /// </returns>
+
         [HttpPut(template: "UpdateStudent/{StudentId}")]
         public Student UpdateStudent(int StudentId, [FromBody] Student StudentData)
         {

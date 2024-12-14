@@ -200,6 +200,35 @@ namespace Cumulative_1.Controllers
             // Return 0 if the operation fails
             return 0;
         }
+        /// <summary>
+        /// Updates a Course in the database. Data is Course object, request query contains Course ID.
+        /// </summary>
+        /// <param name="CourseData">Course Object containing updated course details</param>
+        /// <param name="CourseId">The Course ID primary key</param>
+        /// <example>
+        /// PUT: api/Course/UpdateCourse/4
+        /// Headers: Content-Type: application/json
+        /// Request Body:
+        /// {
+        ///     "coursecode": "CS101",
+        ///     "teacherid": 2,
+        ///     "startdate": "2024-01-01",
+        ///     "finishdate": "2024-05-01",
+        ///     "coursename": "Introduction to Computer Science"
+        /// } -> 
+        /// {
+        ///     "courseid": 4,
+        ///     "coursecode": "CS101",
+        ///     "teacherid": 2,
+        ///     "startdate": "2024-01-01",
+        ///     "finishdate": "2024-05-01",
+        ///     "coursename": "Introduction to Computer Science"
+        /// }
+        /// </example>
+        /// <returns>
+        /// The updated Course object
+        /// </returns>
+
         [HttpPut("UpdateCourse/{CourseId}")]
         public Course UpdateCourse(int CourseId, [FromBody] Course CourseData)
         {

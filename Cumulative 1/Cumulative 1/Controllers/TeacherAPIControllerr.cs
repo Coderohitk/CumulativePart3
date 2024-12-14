@@ -262,11 +262,34 @@ namespace Cumulative_1.Controllers
             return 0;
         }
         /// <summary>
-        /// 
+        /// Updates a Teacher in the database. Data is a Teacher object, request query contains Teacher ID.
         /// </summary>
-        /// <param name="TeacherId"></param>
-        /// <param name="TeacherData"></param>
-        /// <returns></returns>
+        /// <param name="TeacherData">Teacher Object containing updated teacher details</param>
+        /// <param name="TeacherId">The Teacher ID primary key</param>
+        /// <example>
+        /// PUT: api/Teacher/UpdateTeacher/4
+        /// Headers: Content-Type: application/json
+        /// Request Body:
+        /// {
+        ///     "TeacherFName": "Christine",
+        ///     "TeacherLName": "Brittle",
+        ///     "TeacherHireDate": "2020-08-15",
+        ///     "TeacherEmpNu": "T98765",
+        ///     "TeacherSalary": 55000
+        /// } -> 
+        /// {
+        ///     "TeacherId": 4,
+        ///     "TeacherFName": "Christine",
+        ///     "TeacherLName": "Christine",
+        ///     "TeacherHireDate": "2020-08-15",
+        ///     "TeacherEmpNu": "T98765",
+        ///     "TeacherSalary": 55000
+        /// }
+        /// </example>
+        /// <returns>
+        /// The updated Teacher object
+        /// </returns>
+
         [HttpPut(template: "UpdateTeacher/{TeacherId}")]
         public Teacher UpdateTeacher(int TeacherId, [FromBody] Teacher TeacherData)
         {
