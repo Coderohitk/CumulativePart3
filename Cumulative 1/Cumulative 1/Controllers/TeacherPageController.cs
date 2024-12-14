@@ -127,7 +127,7 @@ namespace Cumulative_1.Controllers
 
             // not doing anything with the response
             _api.UpdateTeacher(id, UpdatedTeacher);
-            // redirects to show author
+            // redirects to show teacher
             return RedirectToAction("Show", new { id = id });
         }
     }
